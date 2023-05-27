@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: antonioabreufilhoaspnetcoreapirestdockeralpine 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: antonioabreufilhoaspnetcoreapirestdockeralpine
+  template:
+    metadata:
+      labels:
+        app: antonioabreufilhoaspnetcoreapirestdockeralpine 
+    spec:
+      containers:
+        - name: antonioabreufilhoaspnetcoreapirestdockeralpine 
+          image: groffeazuredevops2023.azurecr.io/antonioabreufilhoaspnetcoreapirestdockeralpine
+          ports:
+          - containerPort: 80
